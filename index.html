@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="5">
+    <!-- <meta http-equiv="refresh" content="5"> 有点烦人，关掉了-->
     <title>前端学习的主页</title>
     <style></style>
     <script>
@@ -13,34 +13,18 @@
     <!--html注释-->
 </head>
 <body>
-    <h1>
-        页面标题1
-    </h1>
-    <p>
-        段落1 <a href="https://www.baidu.com">url2baidu</a>
-    </p>
-    <p>
-        <progress id='progress1' value="0" max="100">
-        </progress>
-        <button onclick="start_run(100)">下载</button>
-        <script>
-        function start_run(n)
-            {
-                if(n==0){alert("下载完成")}
-                var progress1=document.getElementById("progress1")
-                n=n-1
-                cur_task=100-n
-                progress1.value=cur_task
-                setTimeout("start_run("+n+")",100)
-                
-            }
-        </script>
-    </p>
     <h2>
-        y2
+        zwl42放在GitHub page的首页
     </h2>
     <p>
-        hh
+        点击链接跳转仓库： <a href="https://github.com/ZWL42/front-learning">前端学习</a>
+    </p>
+    
+    <h2>
+        
+    </h2>
+    <p>
+        这个页面什么都会放置，所以乱糟糟的。
     </p>
 </body>
 
@@ -49,36 +33,21 @@
 
 <body>
     <h1>
-        页面标题2
+        这里是另外一个body的h1级别标题
     </h1>
-    <div id="header">This is the header</div>
-    <div id="header">This is the header</div>
-    <p class="text highlight">This is a highlighted text.</p>
-    <p style="color: blue; font-size: 14px;">This is a styled paragraph.</p>
-    <abbr title="HyperText Markup Language">HTML</abbr>
-    <br>
-    <abbr>hi</abbr>
-    <br>
-    <abbr title="114514">臭</abbr>
-    <div data-user-id="12345">User Info</div>
-    <link href="www.baidu.com">baidu</link>
-    <br>
-    <img src="image.png" alt="An example image" height="199">
-    <br>
-    <button onclick="alert('Button clicked!')">Click Me</button>
-
-
-
-
+    <p>
+        正在尝试写js，写了个页面计算器：<a></a>
+    </p>
 </body>
 
 
 <hr>
 
-
-
 <body>
     <h1>下面是内嵌页面</h1>
+    <p> 
+        点击跳转另外一个页面：<a href="otpage.html">otpage.html</a>
+    </p>
     <!-- iframe是页面内嵌其他页面-->
     <iframe src="otpage.html" width="600" height="400"></iframe>
 </body>
