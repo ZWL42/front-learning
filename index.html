@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5">
+    <title>前端学习的主页</title>
+    <style></style>
+    <script>
+        // setInterval(function(){alert("hellow")},3000)
+        //尝试使用计时事件刷新网页，但选择使用头功能来实现定时刷新。
+        //html下，script段内使用双斜线注释，这和js一致
+    </script>
+    <!--html注释-->
+</head>
+<body>
+    <h1>
+        页面标题1
+    </h1>
+    <p>
+        段落1 <a href="https://www.baidu.com">url2baidu</a>
+    </p>
+    <p>
+        <progress id='progress1' value="0" max="100">
+        </progress>
+        <button onclick="start_run(100)">下载</button>
+        <script>
+        function start_run(n)
+            {
+                if(n==0){alert("下载完成")}
+                var progress1=document.getElementById("progress1")
+                n=n-1
+                cur_task=100-n
+                progress1.value=cur_task
+                setTimeout("start_run("+n+")",100)
+                
+            }
+        </script>
+    </p>
+    <h2>
+        y2
+    </h2>
+    <p>
+        hh
+    </p>
+</body>
+
+<!--hr是水平线-->
+<hr>
+
+<body>
+    <h1>
+        页面标题2
+    </h1>
+    <div id="header">This is the header</div>
+    <div id="header">This is the header</div>
+    <p class="text highlight">This is a highlighted text.</p>
+    <p style="color: blue; font-size: 14px;">This is a styled paragraph.</p>
+    <abbr title="HyperText Markup Language">HTML</abbr>
+    <br>
+    <abbr>hi</abbr>
+    <br>
+    <abbr title="114514">臭</abbr>
+    <div data-user-id="12345">User Info</div>
+    <link href="www.baidu.com">baidu</link>
+    <br>
+    <img src="image.png" alt="An example image" height="199">
+    <br>
+    <button onclick="alert('Button clicked!')">Click Me</button>
+
+
+
+
+</body>
+
+
+<hr>
+
+
+
+<body>
+    <h1>下面是内嵌页面</h1>
+    <!-- iframe是页面内嵌其他页面-->
+    <iframe src="otpage.html" width="600" height="400"></iframe>
+</body>
+
+
+
+</html>
