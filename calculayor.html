@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+<style>
+    h2  {color: #3edce4;background-color: antiquewhite;}
+</style>
+
+<title>网页计算器</title>
+<input type="range" min="10" max="300" value="100" oninput="size1(this.value)" onchange="document.getElementById('title').style.fontSize= this.value + 'px' " style="width: 300PX;accent-color: #000;">"计算器"字体大小:<span id="showsize">100</span>&nbsp(松开以应用更改)<!--尝试用按钮提交调整的值<input type="button" value="更改" onclick="document.getElementById('title').style.size='val'"> -->
+<h2 id="title" style="text-align: center;font-family: 'Times New Roman', Times, serif;">计算器</h2>
+<script>
+    //var size
+    //document.getElementById("title").innerHTML = "这是标题"
+    function size1(val){
+        document.getElementById('showsize').innerHTML = val;
+    }
+</script>
+
+
+<div></div>
+
+
+
+
+
+</html>
